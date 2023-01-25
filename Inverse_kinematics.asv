@@ -1,0 +1,24 @@
+%Inverse_Kinematics
+clear;
+clc;
+l1 = 5;
+l2 = 5;
+
+x = 2;
+y = 2;
+
+theta1_init = 0;
+theta2_init = 0;
+
+cos2 = (x^2+y^2 - l1^2 - l2^2)/(2*l1*l2) ;
+theta2 = acos(cos2);
+beta = atan2(y,x);
+cos_psi = (x^2+y^2+l1^2-l2^2)/(2*l1*sqrt(x^2+y^2));
+pso = acos(cos_psi);
+if theta2<0
+    thet
+end
+
+
+
+
